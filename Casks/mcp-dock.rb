@@ -1,19 +1,19 @@
 # frozen_string_literal: true
 
 # MCP Dock - 一站式 MCP Server 管理工具
-# https://github.com/OldJii/mcp-dock
+# https://github.com/today-fo/mcp-dock
 cask "mcp-dock" do
-  arch arm: "arm64", intel: "x64"
+  arch arm: "-arm64", intel: ""
 
   version "1.3.2"
   sha256 arm:   :no_check,
          intel: :no_check
 
-  url "https://github.com/OldJii/mcp-dock/releases/download/v#{version}/MCP.Dock-#{version}-#{arch}.dmg",
-      verified: "github.com/OldJii/mcp-dock/"
+  url "https://github.com/today-fo/mcp-dock/releases/download/v#{version}/MCP.Dock-#{version}#{arch}.dmg",
+      verified: "github.com/today-fo/mcp-dock/"
   name "MCP Dock"
   desc "一站式 MCP Server 和 Skills 管理工具，支持 Cursor、Claude Code、Windsurf、Zed 等"
-  homepage "https://github.com/OldJii/mcp-dock"
+  homepage "https://github.com/today-fo/mcp-dock"
 
   # 自动检查最新版本
   livecheck do

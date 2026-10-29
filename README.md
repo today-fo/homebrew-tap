@@ -6,7 +6,7 @@
 
 ```bash
 # 安装软件（会自动添加 tap）
-brew install --cask OldJii/tap/<cask-name>
+brew install --cask today-fo/tap/<cask-name>
 ```
 
 ## 可用软件
@@ -17,7 +17,7 @@ brew install --cask OldJii/tap/<cask-name>
 
 ```bash
 # 安装
-brew install --cask OldJii/tap/mcp-dock
+brew install --cask today-fo/tap/mcp-dock
 
 # 更新
 brew upgrade --cask mcp-dock
