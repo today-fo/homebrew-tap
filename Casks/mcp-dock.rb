@@ -8,8 +8,7 @@ cask "mcp-dock" do
   sha256 arm:   "479986ad9978c22195ccfdc850d7e407cdaa731d050a6630b5606725c06f9bdc",
          intel: "7ce8b0c90e2d04249e97a3bb5670695b1a3867122d2751368d68360f95e71943"
 
-  url "https://github.com/today-fo/mcp-dock/releases/download/v#{version}/MCP.Dock-#{version}#{arch}.dmg",
-      verified: "github.com/today-fo/mcp-dock/"
+  url "https://github.com/today-fo/mcp-dock/releases/download/v#{version}/MCP.Dock-#{version}#{arch}.dmg"
   name "MCP Dock"
   desc "Manage MCP servers, Skills and Rules for AI coding clients"
   homepage "https://mcp.folay.top"
