@@ -2,20 +2,20 @@
 
 MCP Dock 的 Homebrew Tap。
 
-## 当前状态
-
-**目前没有可通过 Homebrew 安装的 MCP Dock 版本**，`brew install --cask mcp-dock` 暂不可用，本仓库因此没有 Cask 文件。
-
-原因：尚未发布经过 Apple 签名与公证的正式安装包。Cask 只会在对应的 GitHub Release 及其安装包真实存在后，由发布流程自动生成：使用真实版本号和 SHA-256 校验值，不会通过移除隔离属性（`xattr`）等方式绕过 macOS 的安全检查。
-
-安装方式以官网 <https://mcp.folay.top> 的说明为准；在官网开放下载之前，请不要使用来源不明的 MCP Dock 安装包。
-
-## 托管说明
-
-本 Tap 的文件目前托管在临时承接账号 `today-fo` 下，Release 完成后的命令将是：
+## 安装
 
 ```bash
 brew install --cask today-fo/tap/mcp-dock
 ```
 
-该命令此刻**不能使用**。主账号恢复后托管位置会迁回，届时以官网说明为准。
+Cask 同时支持 Apple Silicon 与 Intel：下载 GitHub Release 里的 DMG，并按该安装包真实的 SHA-256 校验。版本与校验值由发布流程在 Release 公开之后自动生成。
+
+## 首次打开
+
+macOS 构建使用 ad-hoc 签名，**未经 Apple 公证**。Cask 安装的是同一个安装包，首次打开时 macOS 可能拦截；请按官网的[安装指南](https://mcp.folay.top/guides/install)放行，不要通过移除隔离属性（`xattr`）等方式绕过系统检查。
+
+安装方式以官网 <https://mcp.folay.top> 的说明为准；请不要使用来源不明的 MCP Dock 安装包。
+
+## 托管说明
+
+本 Tap 的文件目前托管在临时承接账号 `today-fo` 下，上面的命令使用的就是这个托管位置。主账号恢复后托管位置会迁回，届时以官网说明为准。
